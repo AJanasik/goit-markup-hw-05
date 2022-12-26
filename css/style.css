@@ -475,8 +475,9 @@ footer {
 	justify-content: center;
 	margin-bottom: 50px;
 	gap: 8px;
-	transition: color 250ms;
-	transition: background-color 250ms;
+	transition-property: color, background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-button:first-child {
@@ -818,4 +819,51 @@ footer {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+.margin-left {
+	margin-left: 78px;
+}
+
+.newsletter-button {
+	background-color: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.newsletter-button-text {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 42px;
+	padding-right: 24px;
+}
+.svg-color {
+	fill: #ffffff;
+	margin-left: 24px;
+}
+
+.inline {
+	display: flex;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.email-input {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: #2f303a;
+	padding-left: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	width: 358px;
 }
